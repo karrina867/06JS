@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*ветвление > < >= <= != == ===  не строгое совпадение типов данных*/
+        let x =3;
+
+        if (a>0) {
+                console.log('числа не равны');
+        }
+        else{
+            console.log('числа не равны');
+        }
+
+        value1 = +prompt('введите число');
+        if(value1 > 0){
+            console.log()
+        }
+        else if(value1 > 0){
+            console.log()
+        }
+        else(value1 > 0){
+            console.log()
+        }
+
+        /*&& - и || -или ! нет */
+        let val2 = 17;
+        if((val2 >= 4 && val2 <= 10 ) || (val >= 15 && val2 <= 20)){
+
+        }
+        let val3 = 4;
+        if(val3){
+            console.log('число не равно нулю')
+        }
+
+        /*приведение к false*/
+       /* 0 NaN underfined null '' */
+
+
+       /*switch строгое совпадение типов данных*/
+       let numberDay = parseInt(prompt('введите номер дня недели'));
+
+       switch(numberDay){
+        case 1:
+            numberDayconsole.log('понедельник');
+            break;
+        default:
+            console.log('не коректное значение')
+       }
+       switch(numberDay){
+        case1:
+        case2:
+              console.log('не коректное значение')
+              break;
+
+       }
+       let test = 3;
+       if(test % 2 ==0)
+
+       /*? - тернарный оператор*/
+       let result = (test % 2 == 0) ? 'чётное': 'нечётное';
+       console.log(result);
+
+       /*циклы*/
+       /*for ,*/
+       for(let i = 1; i <= 10; i++){
+        console.log(i);
+       }
+       for(let i = 0, j =10; i != j; i++, j--){
+        console.log(i,j);
+       }
+
+       label1: for(let i = 1; i<= 10; i++){
+         for(let j = 1; j <= 10;j++){
+            console.log(i,j);
+            break label1;
+            continue label1; //метка
+         }
+       }
+       /*цикл с предусловием */
+       let count = 0;
+       while(count <10){
+           console.log(count++);
+           if(count == 5){
+            break;
+           }
+       }
+       /*цикл с подусловием*/
+       let count2 = 0;
+       do{
+        console.log(count);
+        count++;
+       }while(count <= 10);
+    </script>
+</body>
+</html>
